@@ -5,6 +5,7 @@ This command allows you to check the status of specific TCP and UDP ports on a h
 ## Command Definition
 
 ```cfg
+# vim /usr/local/nagios/etc/objects/commands.cfg
 define command {
     command_name    check_ports
     command_line    /usr/local/nagios/libexec/check_ports.sh -H $ARG1$ $ARG2$
